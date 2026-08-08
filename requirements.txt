@@ -1,0 +1,27 @@
+"""
+requirements.txt — JAX 紧急迫降智能决策系统依赖
+"""
+
+# JAX 核心
+jax==0.4.30
+jaxlib==0.4.30
+
+# 仿真与可视化
+numpy>=1.22
+scipy>=1.9
+matplotlib>=3.5
+
+# RL 训练
+gymnasium>=1.0
+
+# 安全过滤 QP 求解
+scipy>=1.9  # scipy.optimize.linprog / quadprog
+
+# KD-Tree 降落点检索
+scipy.spatial  # 内置于 scipy
+
+# 可选：SB3（MuJoCo-like 工作流）
+# stable-baselines3>=2.0  # 取消注释以启用 SB3 PPO
+
+# 可选：Brax（纯JAX RL）
+# brax>=0.10
