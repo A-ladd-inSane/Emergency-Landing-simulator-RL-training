@@ -38,7 +38,7 @@
 
 ## 项目概述
 
-本项目将一份**飞行汽车紧急迫降智能决策系统技术方案**落地为可运行的 JAX 代码框架。技术方案定义了三层分离架构（感知层、决策层、执行层），涵盖从故障检测到安全着陆的完整链路。由于完整飞行汽车仿真涉及 6DOF 刚体动力学、多旋翼气动、伞系统耦合等复杂模型，本项目使用**2D 质点（小球）模型**作为动力学替身，在保留架构完整性的前提下实现快速原型验证。
+本项目将一份**飞行汽车紧急迫降智能决策系统技术方案**落地为可运行的 JAX 代码框架。技术方案定义了三层分离架构（感知层、决策层、执行层），涵盖从故障检测到安全着陆的完整链路。由于完整飞行汽车仿真涉及 6DOF 刚体动力学、多旋翼气动、伞系统耦合等复杂模型，本项目使用**质点（小球）模型**作为动力学替身，在保留架构完整性的前提下实现快速原型验证。
 
 **核心价值：**
 - 每个模块对应技术方案中的具体公式编号，可逐条追溯
@@ -528,7 +528,7 @@ python src/execution/landing.py
 
 ## Project Overview
 
-This project implements a **flight-vehicle emergency landing intelligent decision system** as a runnable JAX codebase. The technical proposal defines a three-layer architecture (Perception → Decision → Execution) covering the full pipeline from fault detection to safe landing. Since a full flight-vehicle simulation involves 6DOF rigid body dynamics, multi-rotor aerodynamics, and parachute system coupling, this project uses a **2D point-mass (ball) model** as a dynamics surrogate, preserving architectural completeness while enabling rapid prototyping.
+This project implements a **flight-vehicle emergency landing intelligent decision system** as a runnable JAX codebase. The technical proposal defines a three-layer architecture (Perception → Decision → Execution) covering the full pipeline from fault detection to safe landing. Since a full flight-vehicle simulation involves 6DOF rigid body dynamics, multi-rotor aerodynamics, and parachute system coupling, this project uses a **point-mass (ball) model** as a dynamics surrogate, preserving architectural completeness while enabling rapid prototyping.
 
 **Key Value:**
 - Every module maps to a specific equation number in the technical proposal, enabling traceability
